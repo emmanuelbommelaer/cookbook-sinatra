@@ -1,11 +1,9 @@
- <form>
-  <label for="name">Name:</label><br>
-  <input type="text" id="name"><br>
-  <label for="description">Description:</label><br>
-  <input type="text" id="desc"><br>
-  <label for="rating">Rating:</label><br>
-  <input type="text" id="rating"><br>
-  <label for="preptime">Prep time:</label><br>
-  <input type="text" id="prep_time"><br><br>
+<form class="Recipe" action="/recipes" method="post"><br>
+  <input type="text" name="name" value=""><br>
+  <input type="text" name="description" value=""><br>
+  <input type="text" name="rating" value=""><br>
+  <input type="text" name="prep_time" value=""><br><br>
   <input type="submit" value="Submit">
+  <% r = Recipe.new(name, description, rating, prep_time) %>
+  <%# <% @book.create(r) %>
 </form>
